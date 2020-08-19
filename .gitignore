@@ -1,0 +1,29 @@
+# ----------------------------------------
+# Ignora arquivos gerados pelo sistema
+# ----------------------------------------
+.DS_Store
+Thumbs.db
+~*
+
+# ----------------------------------------
+# Arquivos gerados pelo container nginx
+# ----------------------------------------
+services/nginx/logs/*
+!services/nginx/logs/.gitkeep
+
+# ----------------------------------------
+# Arquivos gerados pelo container mysql
+# ----------------------------------------
+services/mysql/data/*
+!services/mysql/data/.gitkeep
+services/mysql/initdb/*.sql
+!services/mysql/initdb/_init.sql
+
+# ----------------------------------------
+# Arquivos fonte
+# ----------------------------------------
+.DS_Store
+.exe
+*.pdf
+*.png
+*.jpeg

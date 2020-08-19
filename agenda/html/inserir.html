@@ -1,0 +1,64 @@
+<fieldset data-target="{FORM}">
+	<form role="form" method="post" action="{FORMULARIO_PAGINA}" id="{FORM}" name="{FORM}" data-form="default">
+    	<input type="hidden" id="{FORM}-token" name="{FORM}-token" value="{TOKEN}">
+		<input type="hidden" id="{FORM}-target" name="{FORM}-target" value="{RESERVA->ID|Encode}">
+		
+		<div class="modal-body">
+            <div class="panel panel-default">
+
+            	<div data-target="{FORM}-result"></div>
+				<div data-target="{FORM}-result-json"></div>
+            	
+            	<div class="panel-heading panel-labeled font-bold">
+					<span class="panel-label">
+						<i class="fa fa-fw fa-lg fa-{FORMULARIO_ICONE}"></i>
+					</span>
+					{FORMULARIO_ACAO}
+				</div>
+				
+				<div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+	            			<div class="form-group">
+	            				<label for="{FORM}-data-inicio" class="required">Data Inicio</label>
+					            <div class="input-group">
+				            	  	<input type="text" class="form-control" id="{FORM}-data-inicio" name="{FORM}-data-inicio" value="{RESERVA->DATA_INICIO|DataHora}" 
+					                	title="Informe a data inicio" placeholder="Informe a data de inicio" data-mask="99/99/9999"
+					                	data-toggle="datepicker" data-datepicker-begin="0" required>
+				                	<div class="input-group-addon cursor-pointer" data-focus="true" data-focus-target="#{FORM}-data-inicio">
+								        <span class="fa fa-fw fa-calendar-check-o"></span>
+								    </div>
+								</div>
+				                <div class="help-block with-errors font-size-11"></div>
+			                </div>
+						</div>
+						
+						<div class="col-sm-8">
+	            			<div class="form-group">
+	            				<label class="required" for="{FORM}-nome">Nome</label>
+				                <input type="text" class="form-control text-uppercase" id="{FORM}-nome" name="{FORM}-nome" value="{PESSOA->NOME}" 
+				                	title="Informe o nome" placeholder="Informe o nome" required>
+				                <div class="help-block with-errors font-size-11"></div>
+			                </div>
+			            </div>
+                    </div>
+
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-xs-12 text-right">
+                                <button type="submit" class="btn btn-labeled btn-success font-bold" id="{FORM}-submit" name="{FORM}-submit" title="Gravar Registro">
+                                    <span class="btn-label">
+                                        <i class="fa fa-lg fa-save"></i>
+                                    </span>
+                                    Gravar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+    </fieldset>
+    
+    {SCRIPT}

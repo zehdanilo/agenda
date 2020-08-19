@@ -1,0 +1,155 @@
+/*
+ * Forms
+ */
+form .form-group-sm .control-label {
+	font-size: 12px;
+}
+form .form-group-lg .control-label {
+	font-size: 18px;
+}
+
+
+/* 
+ * Panels 
+ */
+.panel-green {
+    border-color: #5cb85c;
+}
+.panel-green .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+.panel-green a {
+    color: #5cb85c;
+}
+.panel-green a:hover {
+    color: #3d8b3d;
+}
+.panel-red {
+    border-color: #d9534f;
+}
+.panel-red .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+.panel-red a {
+    color: #d9534f;
+}
+.panel-red a:hover {
+    color: #b52b27;
+}
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+.panel-yellow .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+.panel-yellow a {
+    color: #f0ad4e;
+}
+.panel-yellow a:hover {
+    color: #df8a13;
+}
+
+.panel-labeled{
+	padding: 0;
+}
+.panel-label {
+	position: relative;
+	left: 0;
+	display: inline-block;
+	padding: 8px 12px;
+	margin: 0 5px 0 0;
+	background: transparent;
+	background: rgba(0, 0, 0, .15);
+	border-radius: 3px 0 0 0;
+}
+.text-right .panel-label.panel-label-right {
+	right: 0;
+	left: auto;
+	border-radius: 0 3px 0 0;
+	margin: 0 0 0 5px;
+}
+
+
+
+
+/*
+ * NAVBAR-MENU
+ */
+.navbar-menu {
+    min-height: 35px;
+    border-top: 1px solid #e7e7e7;
+    z-index: 1;
+    border-color: #ddd;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+	.navbar-menu .container{
+		background-color: #f3f3f3;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+	}
+	.navbar-menu .navbar-brand{ 
+		font-weight: bold;
+		padding: 7px 15px;
+		font-size: 14px;
+		height: auto !important;
+	} 
+	.navbar-menu .navbar-nav > li > a,
+	.navbar-menu .navbar-nav > li > a:focus,
+	.navbar-menu .navbar-nav > li > a:hover {
+		border-left: 1px solid #e9e9e9;
+		padding: 7px 7px 7px 10px !important;
+		font-size: 12px;
+	}
+	.navbar-menu .navbar-nav > li:last-child > a,
+	.navbar-menu .navbar-nav > li:last-child > a:focus,
+	.navbar-menu .navbar-nav > li:last-child > a:hover {
+		border-right: 1px solid #e5e5e5;
+	}
+}
+
+
+
+
+/*
+ * BUTTON OUTLINE
+ */
+.btn-outline {
+    color: inherit;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}

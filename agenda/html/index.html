@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="description" content="Agenda">
+        <meta name="robots"      content="nofollow">
+        <meta name="google"      content="notranslate">
+        
+        <title>Agenda</title>
+        
+        
+        <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../lib/fullcalendar/css/fullcalendar.css">
+        <link rel="stylesheet" href="../lib/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" href="../lib/bootstrap-submenu/css/bootstrap-submenu.min.css">
+        <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
+    
+        <link rel="stylesheet" href="../lib/css/application.css">
+        <link rel="stylesheet" href="../lib/css/resources.css">
+        
+    </head>
+
+    <body class="hold-transition skin-blue sidebar-mini">
+            
+        <div data-target="{FORM}-result"></div>
+        <div data-target="{FORM}-result-json"></div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading panel-labeled font-bold">
+                <h2>Calendário</h2>
+            </div>
+            
+            {APP_ACOES}
+            
+            <div class="panel-body p-t-10 p-l-10 p-r-10 p-b-0" >
+                <div id="calendario" name="calendario"></div>
+            </div>
+            
+        </div>
+    
+        <div id="data-loading" class="data-loading"></div>
+        
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/application.js"></script>
+
+        <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../lib/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+        <script src="../lib/bootstrap-datepicker/js/bootstrap-datepicker.pt-BR.min.js" ></script>
+        <script src="../lib/bootstrap-submenu/js/bootstrap-submenu.min.js" ></script>
+        
+
+        <script src="../lib/fullcalendar/js/moment.min.js"></script>
+        <script src="../lib/fullcalendar/js/fullcalendar.js"></script>
+        <script src="../lib/fullcalendar/js/pt-br.js"></script>
+        
+        {SCRIPT}
+
+
+        <footer class="main-footer">
+            <strong>Copyright &copy; Agenda <a href="http://localhost">www.agenda.com</a>.</strong> All rights reserved.
+        </footer>
+          
+          
+        <div id="ModalView" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ModalViewLabel" aria-hidden="true">
+            <div id="ModalViewDialog" class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="ModalViewLabel"></h4>
+                    </div>
+                    <div id="ModalViewContent"></div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </body>
+</html>
