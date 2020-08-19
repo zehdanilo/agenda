@@ -13,6 +13,10 @@ $nome      		    = getParameterPOST("{$form}-nome");
 if ($token){
     
     $objs = getSessionAtribute($_SESSION["Agendas"]);
+    
+    if (is_null($objs) || !$objs ){
+        $objs[] = array();
+    }
 
     $last_id = 1;;
     foreach ($objs as $obj){

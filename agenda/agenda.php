@@ -6,7 +6,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/system/includes.php');
 
 $objs = getSessionAtribute($_SESSION["Agendas"]);
 
-if (is_null($objs)){
+if (is_null($objs) || !$objs){
     $dado =  array(
             'title'  => 'Vacinar Goku',
             'start' => '2020-08-19',
